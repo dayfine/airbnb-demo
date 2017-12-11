@@ -2,14 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Wrapper from '../../common/Wrapper'
+import Explore from '../Explore'
 
-function Landing (props) {
+function Home (props) {
   return (
 
     <main>
-      <Wrapper />
+      <Wrapper>
+        <Explore />
+      </Wrapper>
     </main>
   )
 }
 
-export default Landing
+export default Home

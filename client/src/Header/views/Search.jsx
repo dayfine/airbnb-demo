@@ -12,7 +12,7 @@ const Input = styled.input`
   line-height: 24px;
 
   border: 1px solid rgba(72, 72, 72, .2);
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, .8);
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, .1);
   border-radius: 4px;
 
   padding-left: 53px;
