@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { views as Header } from './Header'
 
 class App extends Component {
   render () {
     return (
       <div className='App'>
-        App
+        <Header />
       </div>
     )
   }
