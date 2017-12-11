@@ -28,11 +28,15 @@ function Header (props) {
   return (
     <HeaderWrapper>
       <Wrapper>
-        <Link href='#'>
-          <Logo alt='Logo' src={logo} />
-        </Link>
-        <Search placeholder='Try "Miami"' type='text' />
-        <Menu />
+        <div className='row'>
+          <div className='row'>
+            <Link href='#'>
+              <Logo alt='Logo' src={logo} />
+            </Link>
+            <Search placeholder='Try "Miami"' type='text' />
+          </div>
+          <Menu />
+        </div>
       </Wrapper>
     </HeaderWrapper>
   )

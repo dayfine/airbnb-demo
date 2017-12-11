@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Nav = styled.nav`
-  margin-left:auto
-`
-
 const List = styled.ul`
   margin: 0;
   padding: 0;
@@ -13,7 +9,7 @@ const List = styled.ul`
 `
 const Item = styled.li`
   display: inline-block;
-  max-width: 56px;
+  min-width: 56px;
   margin-right: 8px;
 
   :first-of-type {
@@ -30,7 +26,7 @@ const Link = styled.a`
 
 function Menu (props) {
   return (
-    <Nav className='col-4'>
+    <nav>
       <List>
         <Item>
           <Link href='/'>Become a host</Link>
@@ -45,7 +41,7 @@ function Menu (props) {
           <Link href='/'>Log In</Link>
         </Item>
       </List>
-    </Nav>
+    </nav>
   )
 }
 

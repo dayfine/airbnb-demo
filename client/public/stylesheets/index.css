@@ -22,9 +22,10 @@ body {
   font-family: CircularAir-Book, Arial, sans-serif;
 }
 
-header > div {
+.row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
