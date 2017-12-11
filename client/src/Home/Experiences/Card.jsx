@@ -1,5 +1,6 @@
 import React from 'react'
-import { Content, Picture, Text } from './styled'
+import Rating from '../../common/Rating'
+import { Content, Picture, Text, Price, Stats } from './styled'
 
 function Card (props) {
   return (
@@ -10,8 +11,12 @@ function Card (props) {
         alt={props.alt}
       />
       <Text href={props.link}>
-        {props.text}
+        <Price>{props.price}</Price> {props.text}
       </Text>
+      <div>
+        <Rating />
+        <Stats>{props.stats}</Stats>
+      </div>
     </Content>
   )
 }

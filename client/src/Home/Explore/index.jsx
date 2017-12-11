@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card'
+import Heading2 from '../../common/Heading2'
 
 import homesLow from './assets/homes.png'
 import homesHigh from './assets/homes@2x.png'
@@ -12,7 +13,7 @@ function Explore (props) {
   return (
 
     <section>
-      <h2>Explore</h2>
+      <Heading2>Explore Airbnb</Heading2>
       <div className='row'>
         <Card
           alt='Homes'

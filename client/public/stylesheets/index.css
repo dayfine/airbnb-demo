@@ -19,7 +19,12 @@
 body {
   margin: 0;
   padding: 0;
+  color: #383838;
   font-family: CircularAir-Book, Arial, sans-serif;
+}
+
+section {
+  margin-top: 24px;
 }
 
 .row {
@@ -29,6 +34,9 @@ body {
   align-items: center;
 }
 
+.row-top {
+  align-items: flex-start;
+}
 .col-1 {
   flex-basis: 8.333%;
   max-width: 8.333%

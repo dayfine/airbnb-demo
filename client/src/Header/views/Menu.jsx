@@ -18,7 +18,6 @@ const Item = styled.li`
 `
 
 const Link = styled.a`
-  color: #383838;
   line-height: 1.5em;
   font-size: .875em;
   text-decoration: none;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import Home from './Home'
 import { views as Header } from './Header'
-import { views as Home } from './Home'
 import { views as Footer } from './Footer'
 
 class App extends Component {
