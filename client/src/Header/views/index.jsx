@@ -28,8 +28,8 @@ function Header (props) {
   return (
     <HeaderWrapper>
       <Wrapper>
-        <div className='row'>
-          <div className='row'>
+        <div className='row row-center'>
+          <div className='row row-center'>
             <Link href='#'>
               <Logo alt='Logo' src={logo} />
             </Link>

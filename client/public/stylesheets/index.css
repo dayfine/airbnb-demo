@@ -32,15 +32,27 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+
+}
+
+.row-center {
   align-items: center;
 }
 
-.row-top {
-  align-items: flex-start;
+.col-1, .col-2, .col-3, .col4,
+.col-5, .col-6, .col-7, .col8,
+.col-9, .col-10, .col-11, .col12 {
+  padding: 0 8px;
+  box-sizing: border-box;
 }
+
 .col-1 {
   flex-basis: 8.333%;
-  max-width: 8.333%
+  max-width: 8.333%;
+  padding: 0 8px;
 }
 
 .col-2 {

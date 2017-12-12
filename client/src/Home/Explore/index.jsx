@@ -11,9 +11,10 @@ import restaurantsHigh from './assets/restaurants@2x.png'
 
 function Explore (props) {
   return (
-
     <section>
-      <Heading2>Explore Airbnb</Heading2>
+      <div className='row row-center'>
+        <Heading2>Explore Airbnb</Heading2>
+      </div>
       <div className='row'>
         <Card
           alt='Homes'

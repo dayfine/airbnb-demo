@@ -16,11 +16,11 @@ import whaleHigh from './assets/whale@2x.png'
 function Explore (props) {
   return (
     <section>
-      <div className='row'>
+      <div className='row row-center'>
         <Heading2>Experiences</Heading2>
         <SeeAll link='#' />
       </div>
-      <div className='row row-top'>
+      <div className='row'>
         <Card
           alt='Forest therapy'
           lowRes={forestLow}
