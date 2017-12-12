@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Home from './Home'
 import { views as Header } from './Header'
-import { views as Footer } from './Footer'
+import Footer from './Footer'
 
 class App extends Component {
   render () {
