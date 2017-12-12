@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
-import starIcon from './starIcon.svg'
+import starIcon from './assets/starIcon.svg'
 
 const Stars = styled.div`
   display: inline-block;

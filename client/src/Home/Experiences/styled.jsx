@@ -11,7 +11,7 @@ export const Text = styled.a`
 `
 
 export const Picture = styled.img`
-  width: 229;
+  width: 229px;
   height: 346px;
   border-radius: 4px;
 `

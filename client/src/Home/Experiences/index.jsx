@@ -1,6 +1,8 @@
 import React from 'react'
 import Card from './Card'
 import Heading2 from '../../common/Heading2'
+import SeeAll from '../../common/SeeAll'
+import NextPage from '../../common/NextPage'
 
 import forestLow from './assets/forest.png'
 import forestHigh from './assets/forest@2x.png'
@@ -14,7 +16,10 @@ import whaleHigh from './assets/whale@2x.png'
 function Explore (props) {
   return (
     <section>
-      <Heading2>Experiences</Heading2>
+      <div className='row'>
+        <Heading2>Experiences</Heading2>
+        <SeeAll link='#' />
+      </div>
       <div className='row row-top'>
         <Card
           alt='Forest therapy'
@@ -52,6 +57,7 @@ function Explore (props) {
           text='Whale watching'
           stats='72 reviews'
         />
+        <NextPage top='155px' />
       </div>
     </section>
   )
