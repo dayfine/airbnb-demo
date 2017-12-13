@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Link = styled.a`
+  font-size: .75em;
   text-decoration: none;
   color: #636363
 `
@@ -23,8 +24,8 @@ export const List = styled.ul`
   list-style: none;
 `
 
-const Title = styled.h3`
-  marign-bottom: 16px;
+const Title = styled.h4`
+  margin: 16px 0px 12px 0px;
 `
 
 export function Heading (props) {
