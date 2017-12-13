@@ -11,6 +11,7 @@ export const Heading = styled.p`
 export const Picture = styled.img`
   width: 310px;
   height: 204px;
+  border-radius: 4px;
 `
 
 export const Description = styled.p`

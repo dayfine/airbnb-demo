@@ -1,24 +1,30 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import Wrapper from '../common/Wrapper'
 import Options from './Options'
-import { List, Item, Heading } from './Menu/styled'
-import menuConfig from './Menu/menuConfig'
+import Menu from './Menu'
+import BottomBar from './BottomBar'
+
+const FooterWrapper = styled.div`
+  padding-top: 24px
+`
 
 function Footer (props) {
   return (
-    <Wrapper>
-      <div className='row row-full'>
-        <Options />
-        {menuConfig.map(list => (
-          <div className='col-3' key={list.title}>
-            <Heading title={list.title} />
-            <List>
-              {list.items.map(item => (<Item {...item} key={item.text} />))}
-            </List>
+    <FooterWrapper>
+      <Wrapper>
+        <div className='row row-full'>
+          <div className='col-3'>
+            <Options />
           </div>
-        ))}
-      </div>
-    </Wrapper>
+          <div className='col-9'>
+            <Menu />
+          </div>
+        </div>
+        <BottomBar />
+      </Wrapper>
+    </FooterWrapper>
   )
 }
 

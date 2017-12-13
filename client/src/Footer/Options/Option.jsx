@@ -4,6 +4,7 @@ import arrowIcon from '../assets/downArrow.svg'
 
 const Div = styled.div`
   position: relative;
+  margin-top: 16px;
 `
 
 const Select = styled.select`
@@ -14,7 +15,7 @@ const Select = styled.select`
   border: 1px solid rgba(72, 72, 72, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 16px
+  margin-bottom: 4px
 `
 const Arrow = styled.span`
   position: absolute;

@@ -9,7 +9,7 @@ import logo from '../assets/logo.svg'
 const HeaderWrapper = styled.header`
   width: 100%;
   box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
-  padding: 16px 0;
+  padding: 12px 0;
 `
 
 const Logo = styled.img`
