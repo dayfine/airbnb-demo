@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Home from './Home'
+import Landing from './Landing'
 import { views as Header } from './Header'
 import Footer from './Footer'
 
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Header />
-        <Home />
+        <Landing />
         <Footer />
       </div>
     )

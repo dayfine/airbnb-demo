@@ -55,7 +55,6 @@ section {
 .col-1 {
   flex-basis: 8.333%;
   max-width: 8.333%;
-  padding: 0 8px;
 }
 
 .col-2 {

@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 export const Picture = styled.img`
   width: 147px;
-  height: 200px;
+  height: 220px;
 `
 
 export const Content = styled.div`
-  max-width: 147px;
+  max-width: 152px;
 `
 export const Subheading = styled.p`
+  font-family: "CircularAir-Bold", "Arial Bold", sans-serif;
   margin: 8px 0;
 `

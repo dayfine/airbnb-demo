@@ -32,6 +32,7 @@ function Featured (props) {
           const highRes = pathToImages(`./${toLow(city)}@2x.png`)
           return (
             <Card
+              key={city}
               lowRes={lowRes}
               highRes={highRes}
               alt={city}
@@ -39,7 +40,7 @@ function Featured (props) {
             />
           )
         })}
-        <NextPage top='80px' />
+        <NextPage top='90px' />
       </div>
     </section>
   )
