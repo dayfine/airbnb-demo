@@ -4,18 +4,45 @@ import Heading2 from '../../common/Heading2'
 import SeeAll from '../../common/SeeAll'
 import NextPage from '../../common/NextPage'
 
-function Explore (props) {
+function toLow (str) {
+  return str.toLowerCase().replace(/\s/, '')
+}
+
+const destinations = [
+  'Cape Town',
+  'Los Angeles',
+  'Miami',
+  'Paris',
+  'Seoul',
+  'Tokyo'
+]
+
+const pathToImages = require.context('./assets', true)
+
+function Featured (props) {
   return (
     <section>
       <div className='row row-center'>
-        <Heading2>Popular</Heading2>
+        <Heading2>Featured destinations</Heading2>
         <SeeAll link='#' />
       </div>
       <div className='row'>
-        <NextPage top='155px' />
+        {destinations.map(city => {
+          const lowRes = pathToImages(`./${toLow(city)}.png`)
+          const highRes = pathToImages(`./${toLow(city)}@2x.png`)
+          return (
+            <Card
+              lowRes={lowRes}
+              highRes={highRes}
+              alt={city}
+              subheading={city}
+            />
+          )
+        })}
+        <NextPage top='80px' />
       </div>
     </section>
   )
 }
 
-export default Explore
+export default Featured
