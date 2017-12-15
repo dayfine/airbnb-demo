@@ -6,7 +6,7 @@ import menuConfig from './menuConfig'
 
 const MenuColumn = styled.div`
   margin-left: 24px;
-  padding-bottom: 24px
+  padding-bottom: 36px
 `
 
 function Menu (props) {

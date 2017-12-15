@@ -1,21 +1,25 @@
 import React from 'react'
-import styled from 'styled-components'
 
+import Wrapper from '../../common/Wrapper'
+import BottomNav from './BottomNav'
 import Social from './Social'
-
-const BottomWrapper = styled.div`
-  padding: 12px 0;
-  border-top: 1px solid rgba(72, 72, 72, 0.1)
-`
+import { BottomWrapper, Logo, Copyright } from './styled'
+import logo from '../assets/logo.svg'
 
 function BottomBar (props) {
   return (
-    <BottomWrapper>
-      <div className='row row-center'>
-        <div className='row row-center' />
-        <Social />
-      </div>
-    </BottomWrapper>
+    <Wrapper>
+      <BottomWrapper>
+        <div className='row row-center'>
+          <Logo src={logo} />
+          <div className='row row-center flex'>
+            <Copyright>© Airbnb Inc.</Copyright>
+            <BottomNav />
+          </div>
+          <Social />
+        </div>
+      </BottomWrapper>
+    </Wrapper>
   )
 }
 
