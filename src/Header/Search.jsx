@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import searchIcon from '../assets/searchIcon.svg'
+import searchIcon from './assets/searchIcon.svg'
 
 const Div = styled.div`
   display: inline-block

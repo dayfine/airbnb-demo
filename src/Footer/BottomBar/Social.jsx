@@ -20,7 +20,7 @@ const Link = styled.a`
   text-decoration: none;
 `
 
-const Icon = styled.img`
+const Icon = styled.i`
   width: 24px;
   height: 24px;
   color: #000;
@@ -32,17 +32,17 @@ function Social (props) {
       <List>
         <Item>
           <Link href='#'>
-            <Icon src={fbIcon} />
+            <Icon className='fa fa-facebook' aria-hidden='true' />
           </Link>
         </Item>
         <Item>
           <Link href='#'>
-            <Icon src={twIcon} />
+            <Icon className='fa fa-twitter' aria-hidden='true' />
           </Link>
         </Item>
         <Item>
           <Link href='#'>
-            <Icon src={igIcon} />
+            <Icon className='fa fa-instagram' aria-hidden='true' />
           </Link>
         </Item>
       </List>
