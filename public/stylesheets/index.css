@@ -1,4 +1,4 @@
-@import 'grid.css'
+@import './grid.css';
 
 @font-face {
   font-family: "CircularAir-Light";
@@ -29,22 +29,7 @@ section {
   margin-top: 24px;
 }
 
-.row-center {
-  align-items: center;
-}
-
-.sm-left {
-  justify-content: flex-start;
-}
-
-.sm-right {
-  justify-content: flex-end;
-}
-
 .flex {
   flex: 1 0 auto
 }
 
-.row-full {
-  width: 100%;
-}

@@ -17,10 +17,12 @@ function Landing (props) {
   return (
     <LandingWrapper>
       <Wrapper>
-        <Explore />
-        <Experiences />
-        <Featured />
-        <Homes />
+        <div className='container'>
+          <Explore />
+          <Experiences />
+          <Featured />
+          <Homes />
+        </div>
       </Wrapper>
     </LandingWrapper>
   )

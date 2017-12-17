@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import { Route, Switch } from 'react-router-dom'
 import Landing from './Landing'
-import { views as Header } from './Header'
+import Header from './Header'
 import Footer from './Footer'
 
 class App extends Component {

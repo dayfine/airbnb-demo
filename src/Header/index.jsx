@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Wrapper from '../../common/Wrapper'
+import Wrapper from '../common/Wrapper'
 import Search from './Search'
 import Menu from './Menu'
-import logo from '../assets/logo.svg'
+import logo from './assets/logo.svg'
 
 const HeaderWrapper = styled.header`
   width: 100%;
@@ -27,9 +27,9 @@ const Link = styled.a`
 function Header (props) {
   return (
     <HeaderWrapper>
-      <Wrapper>
-        <div className='row row-center'>
-          <div className='row row-center'>
+      <div className='container'>
+        <div className='row between-xs middle-xs'>
+          <div className='row between-xs middle-xs'>
             <Link href='#'>
               <Logo alt='Logo' src={logo} />
             </Link>
@@ -37,7 +37,7 @@ function Header (props) {
           </div>
           <Menu />
         </div>
-      </Wrapper>
+      </div>
     </HeaderWrapper>
   )
 }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "google-map-react": "^0.25.0",
     "lodash": "^4.17.4",
     "moment": "^2.19.3",
@@ -17,10 +18,10 @@
     "styled-components": "^2.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "sass": "node-sass -w -r public/stylesheets/scss -o public/stylesheets",
+    "start": "npm run sass & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "sass": "node-sass -w -r public/stylesheets/scss -o public/stylesheets"
+    "eject": "react-scripts eject"
   }
 }
