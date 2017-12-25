@@ -2,10 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import searchIcon from './assets/searchIcon.svg'
 
-const Div = styled.div`
-  display: inline-block
-`
-
 const Input = styled.input`
   background: #ffffff url(${searchIcon}) no-repeat  10px 10px;
   box-sizing: border-box;
@@ -20,18 +16,20 @@ const Input = styled.input`
   padding-top 12px;
   padding-bottom: 12px;
 
+  font-size: .875em;
+
   ::placeholder {
+    font-family: "CircularAir-Light", "Arial", sans-serif;
     color: #383838
-    line-height: 1.5em;
     opacity: .7
   }
 `
 
 function Search (props) {
   return (
-    <Div>
+    <div className='col-sx-8 col-sm-6 col-md-4 col-lg-3'>
       <Input {...props} />
-    </Div>
+    </div>
   )
 }
 
