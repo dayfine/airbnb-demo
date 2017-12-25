@@ -1,9 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import arrowIcon from './assets/downArrow.svg'
+
+export const MenuBtn = styled.button`
+  padding: 0;
+  margin: 0 12px;
+  border: none;
+  width: 14px;
+  height: 7px;
+  background: url(${arrowIcon}) no-repeat 0 0;
+  background-size: cover;
+  display: block;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+`
 
 const Nav = styled.nav`
   display: none;
-  @media screen and (min-width: 990px) {
+  @media screen and (min-width: 992px) {
     display: block;
     text-align: center;
   }
