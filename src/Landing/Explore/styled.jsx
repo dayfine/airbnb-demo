@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Image } from '../../common'
 
 export const Content = styled.div`
   position: relative;
@@ -19,11 +20,21 @@ export const Text = styled.a`
   margin-left: 112px
 `
 
-export const Picture = styled.img`
-  width: 96px;
-  height: 72px;
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  border-radius: 4px 0 0 4px;
+export const Picture = Image.extend`
+  border-radius: 4px 4px 0 0;
+
+  @media screen and (min-width: 768px) {
+    width: 96px;
+    height: 72px;
+    border-radius: 4px 0 0 4px;
+  }
+`
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 `
