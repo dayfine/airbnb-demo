@@ -2,39 +2,26 @@ import styled from 'styled-components'
 import React from 'react'
 import arrowIcon from './assets/arrowIcon.svg'
 
-const Button = styled.button.attrs({
-  top: props => props.top
-})`
-  padding: 0;
-  margin: 0;
-  border: 1px solid rgba(72, 72, 72, .1);
-  border-radius: 50%;
-  position: absolute;
-  top: ${props => props.top};
-  right: -15px;
-  z-index: 100;
-  width: 40px;
-  height: 40px;
-`
-const IconWrapper = styled.span`
-  position: absolute;
-  top: 10px;
-  left: 11px;
-`
+export default styled.button`
+  display: none;
 
-const Arrow = styled.img`
-  width: 20px;
-  height: 20px;
+  @media screen and (min-width: 990px) {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(72, 72, 72, .1);
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    z-index: 111;
+    width: 40px;
+    height: 40px;
+    background: url(${arrowIcon}) no-repeat 14px 6px,
+    rgb(255, 255, 255);
+    background-size: 40%;
+  }
 `
 
-function NextPage (props) {
-  return (
-    <Button top={props.top}>
-      <IconWrapper>
-        <Arrow src={arrowIcon} alt='next' />
-      </IconWrapper>
-    </Button>
-  )
-}
-
-export default NextPage
+export const NextContainer = styled.div`
+  position: relative
+`
