@@ -1,13 +1,12 @@
 import React from 'react'
-import Rating from '../../common/Rating'
+import { Rating, Card } from '../../common'
 import { Content, Picture, Text, Price, Stats } from './styled'
 
-function Card (props) {
+function ExperienceCard (props) {
   return (
-    <Content>
+    <Card to={props.to}>
       <Picture
-        src={props.lowRes}
-        srcset={props.highRes}
+        src={props.highRes}
         alt={props.alt}
       />
       <Text href={props.link}>
@@ -17,8 +16,8 @@ function Card (props) {
         <Rating />
         <Stats>{props.stats}</Stats>
       </div>
-    </Content>
+    </Card>
   )
 }
 
-export default Card
+export default ExperienceCard

@@ -1,18 +1,17 @@
 import React from 'react'
 import { Content, Subheading, Picture } from './styled'
+import { Card } from '../../common'
 
-function Card (props) {
+function FeaturedCard (props) {
   return (
-
-    <Content>
+    <Card to={props.to}>
       <Picture
-        src={props.lowRes}
-        srcset={props.highRes}
+        src={props.highRes}
         alt={props.alt}
         />
       <Subheading>{props.subheading}</Subheading>
-    </Content>
+    </Card>
   )
 }
 
-export default Card
+export default FeaturedCard
