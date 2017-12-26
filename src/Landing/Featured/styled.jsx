@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import { Image } from '../../common'
 
-export const Picture = styled.img`
-  width: 147px;
-  height: 220px;
+export const Picture = Image.extend`
+  @media screen and (min-width: 990px) {
+    height: 220px;
+  }
 `
 
 export const Content = styled.div`

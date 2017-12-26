@@ -12,16 +12,13 @@ export default styled.button`
     border: 1px solid rgba(72, 72, 72, .1);
     border-radius: 50%;
     position: absolute;
-    right: 60px;
-    z-index: 111;
+    right: -20px;
+    top: 45%;
+    z-index: 130;
     width: 40px;
     height: 40px;
     background: url(${arrowIcon}) no-repeat 14px 6px,
     rgb(255, 255, 255);
     background-size: 40%;
   }
-`
-
-export const NextContainer = styled.div`
-  position: relative
 `
