@@ -21,6 +21,26 @@ $gutter: 16px;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+  &.full {
+    width: 100%;
+  }
+
+  &.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    & > [class^="col-"],
+    & > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
 }
 
 %grid-column {
@@ -44,6 +64,10 @@ $gutter: 16px;
 @mixin make-row-classes($name) {
   .between-#{$name} {
     justify-content: space-between;
+  }
+
+  .around-#{$name} {
+    justify-content: space-around;
   }
 
   .start-#{$name} {
