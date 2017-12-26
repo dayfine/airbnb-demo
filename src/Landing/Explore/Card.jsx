@@ -1,19 +1,23 @@
 import React from 'react'
-import { Content, Picture, Text } from './styled'
+import { Text, TextContainer, Picture, FlexContainer } from './styled'
+import { Card } from '../../common'
 
-function Card (props) {
+function ExploreCard (props) {
   return (
-    <Content>
-      <Picture
-        src={props.lowRes}
-        srcset={props.highRes}
-        alt={props.alt}
-      />
-      <Text href={props.link}>
-        {props.text}
-      </Text>
-    </Content>
+    <Card to={props.to}>
+      <FlexContainer>
+        <Picture
+          src={props.highRes}
+          alt={props.alt}
+        />
+        <TextContainer>
+          <Text href={props.link}>
+            {props.text}
+          </Text>
+        </TextContainer>
+      </FlexContainer>
+    </Card>
   )
 }
 
-export default Card
+export default ExploreCard
