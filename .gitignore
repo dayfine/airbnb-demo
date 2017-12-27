@@ -1,6 +1,6 @@
 .DS_Store
 package-lock.json
-grid.css
+/build
 
 # Logs
 logs
