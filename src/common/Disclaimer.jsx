@@ -6,10 +6,12 @@ import Button from 'material-ui/Button'
 import Typography from 'material-ui/Typography'
 import Dialog from 'material-ui/Dialog'
 
+import { closeDisclaimer } from '../Store'
+
 const styles = {
   root: {
     display: 'flex',
-    padding: 28,
+    padding: 32,
     color: 'white',
     backgroundColor: '#ff4f54',
     flexDirection: 'column',
@@ -26,16 +28,18 @@ const styles = {
 
   },
   body: {
-    fontSize: '1.075em'
+    fontSize: '1.075em',
+    textAlign: 'justify'
   }
 }
 
 class Disclaimer extends React.Component {
   state = {
-    open: true
+    open: this.props.showDisclaimer
   }
 
   onClose = () => {
+    this.props.closeDisclaimer()
     this.setState({ open: false })
   }
 
@@ -46,7 +50,7 @@ class Disclaimer extends React.Component {
       <div>
         <Dialog
           open={ this.state.open }
-          onRequestClose={ this.onClose }
+          onClose={ this.onClose }
         >
           <div className={ classes.root }>
             <p className={ classes.title } >
@@ -57,10 +61,9 @@ class Disclaimer extends React.Component {
               <br />
               <br />
                The site is not intended for and should not be used for commercial transactions.
-               <br />
-               <br />
-               All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
-
+              <br />
+              <br />
+              All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
             </p>
              <Button
               color='inherit'
@@ -78,10 +81,10 @@ class Disclaimer extends React.Component {
 }
 
 const mapState = state => ({
-
+  showDisclaimer: state.showDisclaimer
 })
 
-const mapDispatch = ({})
+const mapDispatch = ({ closeDisclaimer })
 
 export default  connect(mapState, mapDispatch)(
                 withStyles(styles)(

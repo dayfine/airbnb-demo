@@ -1,21 +1,27 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
-// function close (state, action) {
-//   if (typeof state === 'undefined') {
-//     return initialState
-//   }
+// Close
+const CLOSE = 'CLOSE'
 
-//   return state
-// }
+export const closeDisclaimer = () => ({ type: CLOSE })
 
+function close (state = true, action) {
+  switch (action.type) {
+    case CLOSE:
+      return false
+
+    default:
+      return state
+  }
+}
+
+// Rest of Store
 const rootReducer = combineReducers({
-
+  showDisclaimer: close
 })
 
-const initialState = {
-  showDisclaimer: true
-}
+const initialState = {}
 
 let middlewares = [
   thunkMiddleware

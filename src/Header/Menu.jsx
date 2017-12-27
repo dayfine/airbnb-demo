@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import arrowIcon from './assets/downArrow.svg'
 
 export const MenuBtn = styled.button`
@@ -25,7 +26,7 @@ const Nav = styled.nav`
   }
 `
 
-const Link = styled.a`
+const MyLink = styled(Link)`
   display: inline-block;
   min-width: 56px;
   margin-right: 8px;
@@ -37,10 +38,10 @@ const Link = styled.a`
 function Menu (props) {
   return (
     <Nav>
-      <Link href='/'>Become a host</Link>
-      <Link href='/'>Help</Link>
-      <Link href='/'>Sign Up</Link>
-      <Link href='/'>Log In</Link>
+      <MyLink to='/'>Become a host</MyLink>
+      <MyLink to='/'>Help</MyLink>
+      <MyLink to='/'>Sign Up</MyLink>
+      <MyLink to='/'>Log In</MyLink>
     </Nav>
   )
 }

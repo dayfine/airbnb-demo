@@ -9,7 +9,7 @@ function ExperienceCard (props) {
         src={props.highRes}
         alt={props.alt}
       />
-      <Text href={props.link}>
+      <Text>
         <Price>{props.price}</Price> {props.text}
       </Text>
       <div>

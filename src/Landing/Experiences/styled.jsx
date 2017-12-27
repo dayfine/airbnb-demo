@@ -4,7 +4,7 @@ import { Image } from '../../common'
 export const Content = styled.div`
   max-width: 229px;
 `
-export const Text = styled.a`
+export const Text = styled.div`
   line-height: normal;
   font-size: 1em;
   text-decoration: none;
