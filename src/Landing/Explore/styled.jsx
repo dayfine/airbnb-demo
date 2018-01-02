@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Image } from '../../common'
 
-export const Text = styled.a`
+export const Text = styled.div`
   text-decoration: none;
   line-height: 14px;
   font-size: 14px;

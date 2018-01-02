@@ -1,0 +1,10 @@
+{
+  "apps": [{
+    "name": "airbnb.difan.io",
+    "script": "server",
+    "env": {
+      "PORT": "3100",
+      "NODE_ENV": "production"
+    }
+  }]
+}

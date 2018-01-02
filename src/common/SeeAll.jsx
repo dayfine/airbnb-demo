@@ -6,6 +6,7 @@ import arrowIcon from './assets/arrowIcon.svg'
 const Text = styled.span`
   line-height: 1.25;
   font-size: 14px;
+  text-decoration: none;
 
   @media screen and (min-width: 768px) {
     font-size: 16px

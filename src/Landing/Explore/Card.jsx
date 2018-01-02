@@ -11,7 +11,7 @@ function ExploreCard (props) {
           alt={props.alt}
         />
         <TextContainer>
-          <Text href={props.link}>
+          <Text>
             {props.text}
           </Text>
         </TextContainer>
