@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import { Heading2, SeeAll, CardsContainer, NextPage } from '../../common'
+import { Heading2, SeeAll, CardsContainer } from '../../common'
 
 function toLow (str) {
   return str.toLowerCase().replace(/\s/, '')
@@ -39,7 +39,6 @@ function Featured (props) {
               </div>
             )
           })}
-          <NextPage />
         </div>
       </CardsContainer>
     </section>

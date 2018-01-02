@@ -13,7 +13,6 @@ export default styled.button`
     border-radius: 50%;
     position: absolute;
     right: -20px;
-    top: 45%;
     z-index: 130;
     width: 40px;
     height: 40px;
@@ -21,4 +20,8 @@ export default styled.button`
     rgb(255, 255, 255);
     background-size: 40%;
   }
+`
+
+export const NextContainer = styled.div`
+    position: relative;
 `

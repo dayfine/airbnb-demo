@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Heading2 from './Heading2'
-import NextPage from './NextPage'
+import NextPage, { NextContainer } from './NextPage'
 import Rating from './Rating'
 import SeeAll from './SeeAll'
 
@@ -24,4 +24,4 @@ export const CardsContainer = styled.div`
   box-sizing: border-bosx;
 `
 
-export { Heading2, NextPage, Rating, SeeAll }
+export { Heading2, NextPage, Rating, SeeAll, NextContainer }
