@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import fbIcon from '../assets/fbIcon.svg'
-import twIcon from '../assets/twIcon.svg'
-import igIcon from '../assets/igIcon.svg'
 
 const List = styled.ul`
   margin: 0;
